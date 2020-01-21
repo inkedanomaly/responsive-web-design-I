@@ -81,16 +81,19 @@ title{
 }
 
 /*BEGIN NAV BAR STYLING*/
+.links ul{
+    list-style: none; 
+    display:flex;
+    justify-content:space-evenly;
+ }
 
 nav {
 	display:flex;
-	width:90%;
+    width:90%;
 }
 
 .links {
 	width:100%;
-	display:flex;
-	justify-content:space-evenly;
 	padding-top: 5%
 }
 
@@ -102,7 +105,6 @@ nav {
 nav a{
 	color: slategray;
 	text-decoration: none;
-	
 }
 
 nav a:hover{
@@ -223,32 +225,43 @@ nav a:hover{
         width:80%;
         margin:auto;
     }
-
     .headerimg {
         display:none;
     }
-    
     .titlecontainer div{
         width:40%;
     }
-    
-    }
-    
-    
-    
 }
-
-
-
-
-
 /*TABLET-VIEW STYLING ENDS HERE*/
 
 /*MOBILE-VIEW STYLING STARTS HERE*/
 @media(max-width: 500px){
+    .links ul{
+        flex-flow: wrap;
+    }
+    .links li{
+        flex-basis:100%;
+        border:1px solid gray;
+        padding:5%;
+    }
+    nav {
+        text-align: center;
+        width:100%;
+    }
+    .titlecontainer h1 {
+        font-size:3rem;
+        line-height: 1;
+    }
+    .titlecontainer h2{
+        width: 110px;
+        height:25px;
+        padding-top: 6px;
+        font-size: .7rem;
 
-
-
+    }
+    .titlecontainer div {
+        padding-bottom:10%;
+    }
 
 }
 
