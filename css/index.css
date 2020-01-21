@@ -262,7 +262,30 @@ nav a:hover{
     .titlecontainer div {
         padding-bottom:10%;
     }
-
+    .container{
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    .container div{
+        width:100%;
+        padding:5% 0;
+    }
+    .container p {
+        width:100%;
+    }
+    .container2{
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+    .container2 div{
+        width:100%;
+        padding:5% 0;
+    }
+    .container2 p {
+        width:100%;
+    }
 }
 
 
